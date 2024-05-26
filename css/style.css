@@ -1,0 +1,146 @@
+/*All fonts are from Google Fonts*/
+/*Icon images are from https://icons8.com/icons*/
+
+/*Surface colors*/
+body {
+    background-color: #FFF8F2;
+}
+
+/*Where I do things for the grid and layout of my page*/
+/*Learned how to do grid a bit from "Slaying The Dragon"*/
+/*https://youtu.be/MxEtxo_AaZ4?feature=shared*/
+/*https://youtu.be/EiNiSFIPIQE?feature=shared*/
+/*Usually when learning, I was just generally looking at MDN Docs, W3schools, and CSS-Tricks (when Elio showed me)*/
+
+/*Basic grid*/
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        'header'
+        'main' 
+        'footer';
+}
+
+/*Stuff for nav bar*/
+.item-1 {
+    grid-area: header;
+    position: fixed;
+    width: 100%;
+    background-color: #6C5C3F;
+    border-style: solid;
+    top: 0px;
+    left: 0px;
+    margin-left: auto;
+    padding: 16px;
+    z-index: 2;
+}
+
+/*Stuff for my main contents*/
+.item-2 {
+    grid-area: main;
+    background-color: #F7ECDF;
+    position: relative;
+    top: 48px;
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #261900;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/*Just have this here for when I could eventually use in the future after the semester(probably for social media, legal stuff)*/
+.item-3 {
+    grid-area: footer;
+}
+
+/*For the titles of the works, is sticky to move as you scroll down*/
+h1 {
+    background-color: #6C5C3F;
+    color: #FFFFFF;
+    text-align: center;
+    position: sticky;
+    top: 64px;
+    font-family: "Abel", "regular";
+    font-size: 26px;
+    letter-spacing: 0.4px;
+    border-style: solid;
+    border-color: #261900;
+    border-width: 2px;
+    z-index: 1;
+}
+
+/*For the writing*/
+p {
+    font-family: "Exo", "regular";
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color: #261900;
+}
+
+/*For the pictures and videos*/
+.mediaRow {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: fit-content;
+   margin: auto;
+   border-style: solid;
+}
+
+.nameTitle {
+    background-color: #6C5C3F;
+    color: #FFFFFF;
+    font-family: "Major Mono Display", "regular";
+    font-size: 26px;
+    letter-spacing: -0.5px;
+    padding: 8px;
+}
+
+/*Things for buttons*/
+.topicLinks {
+    text-decoration: none;
+    background-color: #6C5C3F;
+    color: #FFFFFF;
+    font-family: "Fragment Mono", "regular";
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #261900;
+    top: 50%;
+}
+
+.topicLinks:hover {
+    background-color: #FFFFFF;
+    color: #6C5C3F;
+}
+
+.topicLinks:active {
+    background-color: #261900;
+    color: #FFFFFF;
+}
+
+.iconComponent {
+    display: flex;
+    background-color:  #6C5C3F;
+    border-style: solid;
+    border-color: #261900;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.iconComponent:hover {
+    background-color: #261900;
+    border-style: solid;
+    border-color: #6C5C3F;
+}
+
+.iconComponent:hover {
+    background-color: #FFFFFF;
+}
